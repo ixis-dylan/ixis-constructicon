@@ -1,3 +1,2 @@
 # ixis-constructicon
-Simple CI server
-test
+A simple web.py HTTP listener 
