@@ -1,0 +1,4 @@
+constructicon:
+  image: ixis/ixis-constructicon
+  ports:
+   - "5000:5000"

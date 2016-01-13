@@ -1,16 +1,9 @@
-import web
+from flask import Flask
+app = Flask(__name__)
 
-urls = (
-    '/', 'index'
-)
-
-class index:
-    def GET(self):
-        return "Hello, world!"
-    def POST():
-        data = web.data()
+@app.route("/")
+def hello():
+    return "Hello World!"
 
 if __name__ == "__main__":
-    app = web.application(urls, globals())
     app.run()
-

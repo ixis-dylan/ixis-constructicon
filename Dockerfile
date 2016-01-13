@@ -1,10 +1,12 @@
 FROM alpine
 
 RUN apk --update add python py-pip && rm -rf /var/cache/apk/*
+RUN pip install flask
 
+ADD app /app
+COPY . /app
 WORKDIR /app
 
-ONBUILD COPY . /app
+EXPOSE 5000
 
-EXPOSE 8080
-CMD ["/usr/bin/python", "main.py"]
+ENTRYPOINT ["python", "./main.py"]
