@@ -1,4 +1,4 @@
 constructicon:
   image: ixis/ixis-constructicon
-  ports:
-   - "5000:5000"
+  expose:
+   - "5000"
